@@ -8,9 +8,13 @@ public_folder: "/images/uploads" # The src attribute for uploaded media will beg
 
 collections:
   - name: "products"
-    label: "Store"
+    label: "Product"
     folder: "_products/store"
     create: true
     fields:
       - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
+      - {label: "id", name: "id", widget: "string"}
       - {label: "Name", name: "name", widget: "string"}
+      - {label: "Price", name: "price", widget: "number"}
+      - {label: "Description", name: "description", widget: "string", valueType: "float"}
+      - {label: "URL", name: "url", widget: "string"}
